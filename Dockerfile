@@ -20,3 +20,5 @@ WORKDIR /build_dir
 ADD ${FOLDER} /build_dir
 RUN pip install -r requirements.txt -t .
 RUN zip -r ${ZIP_NAME} *
+
+#VOLUME /build_dir
