@@ -4,3 +4,6 @@ zip:
 	CONTAINER_ID=$(docker ps -alqf ancestor=lambdazipper)
 	docker cp $(CONTAINER_ID):build_dir/$(ZIP_NAME) $(PWD)
 	docker rm $(CONTAINER_ID)
+
+get:
+	c=docker ps -al -q
