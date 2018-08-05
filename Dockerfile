@@ -14,7 +14,6 @@ RUN ~/miniconda.sh -b -p ~/miniconda
 ENV PATH="~/miniconda/bin/:${PATH}"
 
 RUN python --version
-#RUN  currently 3.6.4, downgrade? -> conda install python==3.6.1
 
 WORKDIR /build_dir
 ADD ${FOLDER} /build_dir
